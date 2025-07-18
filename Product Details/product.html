@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WESTENO - Product Details</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/Assests/Products/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+
+        <!-- HAMBURGER ICON -->
+        <div id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- PAGE NAVIGATOR -->
+        <div id="pageDirector">
+
+            <a href="/Pages/Men Collection/men.html">MEN</a>
+            <a href="/Pages/Women Collection/women.html">WOMEN</a>
+            <a href="/Pages/Kids Collection/kids.html">KIDS</a>
+            <a href="/Pages/Bags Collection/bags.html">BAGS</a>
+            <a href="/Pages/Caps Collection/caps.html">CAPS</a>
+            </div>
+
+        <!-- LOGO -->
+        <div id="logo">
+
+            <a href="/">
+                <img src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/fe4c42420989d39afcbb43fb133861fefaf4624b/Assests/Products/logo.png"
+                    alt="">
+            </a>
+
+        </div>
+
+        <!-- OTHERS -->
+        <div id="other">
+
+            <button class="bagBtn" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            
+            
+            <button class="bagBtn" id="openBag">
+                <span class="btnText">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cartNumber">0</span> 
+                </span> 
+            </button>
+            
+            <div id="account" class="account">
+                <a class="bagBtn" id="accountBtn" href="/Pages/Authentication/login.html">ACCOUNT</a>
+            </div>
+
+
+            <a class="hidden" href="/Pages/About\about.html">ABOUT</a>
+            <a class="hidden" href="/Pages/Contact\contact.html">CONTACT</a>
+        
+
+
+
+
+        </div>
+
+        <div id="smallScreenNav">
+            <a href="/Pages/Men Collection/men.html">MEN</a>
+            <div id="divider"></div>
+            <a href="/Pages/Women Collection/women.html">WOMEN</a>
+            <div id="divider"></div>
+            <a href="/Pages/Kids Collection/kids.html">KIDS</a>
+            <div id="divider"></div>
+            <a href="/Pages\About\about.html">ABOUT</a>
+            <div id="divider"></div>
+            <a href="/Pages\Contact\contact.html">CONTACT</a>
+            <div id="divider"></div>
+            <a href="/Pages/Bags Collection/bags.html">BAGS</a>
+            <div id="divider"></div>
+            <a href="/Pages/Caps Collection/caps.html">CAPS</a>
+
+            <div class="account">
+                <a class="bagBtn" id="accountBtn" href="/Pages/Authentication/login.html">ACCOUNT</a>
+            </div>
+        </div>
+
+        <div id="bags">
+
+            <div id="bagTopSection">
+                <h4>BAGS</h4>
+                <p class="cross" id="closeBtn">
+                    <i class="fa-solid fa-xmark"></i>
+                </p>
+            </div>
+
+            <div id="bagCart"></div>
+
+            <div id="checkoutBtn">
+                <a href="/Pages/CheckOut/checkout.html">
+                    <button id="checkoutButton">Proceed to Checkout</button>
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+ 
+   
+    <!-- PRODUCT DETAILS -->
+    <section class="product">
+
+        <div class="product-container">
+
+            <div class="product-images">
+                <img src="" id="main-image" alt="">
+                <div class="thumbnail-images" id="thumbnails"></div>
+            </div>
+
+            <div class="product-details">
+                <h1 id="product-name"></h1>
+                <p id="product-description"></p>
+                <p class="product-price">Rs. <span id="product-price"></span></p>
+                <div class="size-selection">
+                    <label for="size">Size:</label>
+                    <div class="size-button" id="size-button"></div>
+                </div>
+                <button id="add-to-cart">Add to Bag <i class="fa-solid fa-bag"></i> </button>
+            </div>
+
+
+        </div>
+
+    </section>
+
+  
+    <!-- Footer -->
+    <footer>
+        <div id="footerContainer">
+
+            <div id="community">
+
+                <div>
+                    <h1>JOIN OUR COMMUNITY</h1>
+                    <p>Get the latest news & offers</p>
+                </div>
+
+                <div>
+                    <div id="inputEmail">
+                        <input type="text" placeholder="Email Address">
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="divider"></div>
+
+            <div id="lists">
+
+                <div id="subLists">
+
+                    <div id="support">
+                        <p>SUPPORT</p>
+                        <ul>
+                            <li>FAQs</li>
+                            <li>Contact Us</li>
+                            <li>Return & Refund Policy</li>
+                            <li>Shipping & Delivery</li>
+                            <li>Order Tracking</li>
+                        </ul>
+                    </div>
+
+                    <div id="dividerList"></div>
+
+                    <div id="services">
+                        <p>SERVICES</p>
+                        <ul>
+                            <li>Custom Orders</li>
+                            <li>Gift Cards</li>
+                            <li>Size Guide</li>
+                            <li>Personal Styling</li>
+                            <li>Affiliate Program</li>
+                        </ul>
+                    </div>
+
+                    <div id="dividerList"></div>
+
+                    <div id="about">
+                        <p>ABOUT</p>
+                        <ul>
+                            <li>Our Story</li>
+                            <li>Sustainablitiy & Ethics</li>
+                            <li>Careers</li>
+                            <li>Blog</li>
+                            <li>Customer Reviews</li>
+                        </ul>
+                    </div>
+
+                    <div id="dividerList"></div>
+
+                    <div id="parthner">
+                        <p>PARTHNER</p>
+                        <ul>
+                            <li>Brand Collabrations</li>
+                            <li>Influencer Program</li>
+                            <li>Whole Sale Inquiries</li>
+                            <li>Supplier Portal</li>
+                            <li>Franchise Opportunities</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div id="footerLogo">
+                    <img src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/fe4c42420989d39afcbb43fb133861fefaf4624b/Assests/Products/logo.png"
+                        alt="" srcset="">
+                </div>
+
+            </div>
+
+            <div id="divider"></div>
+
+            <div id="copyRight">
+
+                <div id="terms">
+                    <p>Privacy & Cookies</p>
+                    <a href="./Pages/Terms & Condition/termsCondition.html">Terms & Conditions</a>
+                </div>
+
+                <div>
+                    <p>&copy; WESTENO. All rights reserved</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="product.js"></script>
+<script src="../../script.js"></script>
+
+</html>

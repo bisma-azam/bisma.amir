@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Men's Collection</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="checkout-container">
+        <div class="form-section">
+            <h2>WHERE TO DELIVER YOUR ORDER?</h2>
+            <div id="checkout-form" onsubmit="return false" >
+                <input type="email" name="email" id="email" placeholder="Email Address *" required>
+                <input type="text" name="name" id="name" placeholder="Full Name *" required>
+                <input type="text" name="address" id="address" placeholder="Address Line *" required>
+                <input type="text" name="country" placeholder="Country *" required>
+                <div class="row">
+                    <input type="text" name="city" placeholder="City *" required>
+                    <input type="text" name="postalCode" placeholder="Postal Code *" required>
+                </div>
+                <input type="text" name="phone" id="phone" placeholder="Phone Number *" required>
+                <button id="order-btn" >Place Order</button>
+            </div>
+        </div>
+        
+        <div class="summary-section">
+            <h2>ORDER SUMMARY</h2>
+            <div class="products-container">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+            <div class="subtotal">
+                <p>SUBTOTAL</p>
+                <p class="subtotal-amount">Rs. 0</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="checkout.js"></script>
+</body>
+</html>

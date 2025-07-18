@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Collection</title>
+    <link rel="stylesheet" href="arrivals.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <style>
+        body {
+            background-color: #f9f9f9;
+        }
+
+        /* Breadcrumb navigation */
+        .breadcrumb {
+            padding: 10px 20px;
+            background-color: white;
+        }
+
+        .breadcrumb ul {
+            list-style: none;
+        }
+
+        .breadcrumb a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        /* Main header */
+        .main-header {
+            background-color: #e0e0e0;
+            padding: 15px 0;
+        }
+
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            background-color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a,
+        .nav-actions a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 15px 10px;
+            display: inline-block;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-actions {
+            display: flex;
+        }
+
+        .nav-actions a {
+            margin-left: 20px;
+        }
+
+        /* Page title section */
+        .page-title {
+            background-color: #e0e0e0;
+            padding: 10px 0px;
+        }
+
+        .page-title h1 {
+            max-width: 1200px;
+            margin: 0 auto;
+            font-size: 36px;
+            text-align: center;
+
+        }
+
+
+        /* filterbutton */
+        .filter-btn {
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .wishlist-btn {
+            position: absolute;
+            right: 10px;
+            top: 15px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #999;
+        }
+
+
+
+        img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+    <section class="page-title">
+
+
+        <!-- NAVBAR -->
+        <nav>
+
+            <!-- HAMBURGER ICON -->
+            <div id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- PAGE NAVIGATOR -->
+            <div id="pageDirector">
+
+                <a href="/Pages/Men Collection/men.html">MEN</a>
+                <a href="/Pages/Women Collection/women.html">WOMEN</a>
+                <a href="/Pages/Kids Collection/kids.html">KIDS</a>
+
+            </div>
+
+            <!-- LOGO -->
+            <div id="logo">
+                <img src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/fe4c42420989d39afcbb43fb133861fefaf4624b/Assests/Products/logo.png" alt="">
+            </div>
+
+            <!-- OTHERS -->
+            <div id="other">
+
+                <button class="bagBtn" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    
+                </button>
+                <div id="account">
+                    <a class="bagBtn" id="accountBtn" href="/Pages/Authentication/login.html">ACCOUNT</a>
+
+                </div>
+                <button class="bagBtn" id="openBag"> <span class="btnText"><i class="fa-solid fa-bag-shopping"></i></span> &nbsp;<span
+                        class="bracket">[</span>&nbsp; <span id="cartNumber">0</span> &nbsp;<span
+                        class="bracket">]</span> </button>
+
+            </div>
+
+            <div id="smallScreenNav">
+                <a href="#">MEN</a>
+                <div id="divider"></div>
+                <a href="#">WOMEN</a>
+                <div id="divider"></div>
+                <a href="#">KIDS</a>
+                <div id="divider"></div>
+
+                <button class="bagBtn">ACCOUNT</button>
+            </div>
+
+            <div id="bags">
+
+                <div id="bagTopSection">
+                    <h4>BAGS</h4>
+                    <p class="cross" id="closeBtn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </p>
+                </div>
+
+                <div id="bagCart"></div>
+
+                <div id="checkoutBtn">
+                    <button id="checkoutButton">Proceed to Checkout</button>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="texture-overlay"></div>
+       
+        <h1>NEW ARRIVALS</h1>
+        
+    </section>
+
+
+    <section class="women-main">
+        <!-- Filter bar -->
+        <section class="filter-bar">
+            <button class="filter-btn">Sort & Filter</button>
+        </section>
+
+        <!-- Product grid -->
+        <section class="product-grid">
+            <!-- Product card 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="../Product Details/product.html?id=11">
+                        <div class="img-container">
+                            <img  class="main-img"
+                                src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/main/Assests/Products/Women/High Mileage Ladies Black Fringe and Rivet Leather Jacket/High Mileage Ladies Black Fringe and Rivet Leather Jacket01.jpg">
+                            <!-- <img
+                                src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/main/Assests/Products/Women/High Mileage Ladies Black Fringe and Rivet Leather Jacket/High Mileage Ladies Black Fringe and Rivet Leather Jacket02.jpg" class="hover-img"> -->
+
+                        </div>
+                    </a>
+                    <!-- <div class="placeholder"></div> -->
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">Black Fringe Jacket</h3>
+                        <p class="product-price">Rs. 4999</p>
+                    </div>
+                    <div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product card 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="../Product Details/product.html?id=12">
+                        <div class="img-container">
+                            <img class="main-img"
+                                src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/main/Assests/Products/Women/High Mileage Ladies Brown Fringe and Rivet Leather Jacket/High Mileage Ladies Brown Fringe and Rivet Leather Jacket01.jpg">
+                        </div>
+                    </a>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">Brown Fringe Jacket</h3>
+                        <p class="product-price">Rs. 2599</p>
+                    </div>
+                    <div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product card 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="../Product Details/product.html?id=13">
+                        <div class="img-container">
+                            <img class="main-img"
+                                src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/main/Assests/Products/Women/High Mileage Ladies Lightweight Black Goatskin Jacket w Grommeted Twill and Lace Highlights 2/lightwight goatskin jactket2.jpg">
+                        </div>
+                    </a>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">Goatskin Lace Jacket</h3>
+                        <p class="product-price">Rs. 5999</p>
+                    </div>
+                    <div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- <section class="product-grid"> -->
+            <!-- Product card 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="../Product Details/product.html?id=14">
+                        <div class="img-container">
+                            <img class="main-img"
+                                src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/main/Assests/Products/Women/High Mileage Ladies Vintage Brown Leather Jacket with Diamond Stitched Shoulders/High Mileage Ladies Vintage Brown Leather Jacket with Diamond Stitched Shoulders1.jpg">
+                        </div>
+                    </a>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">Vintage Stitched Jacket</h3>
+                        <p class="product-price">Rs. 4555</p>
+                    </div>
+                    <div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product card 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="../Product Details/product.html?id=15">
+                        <div class="img-container">
+                            <img class="main-img" src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/main/Assests/Products/Women/Ladies High Mileage Black and Brown Jacket/Ladies High Mileage Black and Brown Jacket1.jpg"
+                                alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">Black & Brown Moto</h3>
+                        <p class="product-price">Rs. 6599</p>
+                    </div>
+                    <div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product card 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="../Product Details/product.html?id=16">
+                        <div class="img-container">
+                            <img class="main-img" src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/main/Assests/Products/Women/Ladies Lightweight Distressed Gray Goat Skin Leather Jacket/Ladies Lightweight Distressed Gray Goat Skin Leather Jacket1.png"
+                                alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">Distressed Gray Jacket</h3>
+                        <p class="product-price">Rs. 3999</p>
+                    </div>
+                    <div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-grid">
+            <!-- Product card 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="../Product Details/product.html?id=17">
+                        <div class="img-container">
+                            <img class="main-img" src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/main/Assests/Products/Women/Ladies Premium Cowhide Braid and Stud Motorcycle Leather Jacket/Ladies Premium Cowhide Braid and Stud Motorcycle Leather Jacket1.jpg"
+                                alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="product-info">
+
+                    <div>
+                        <h3 class="product-title">Braided Studded Jacket</h3>
+                        <p class="product-price">Rs. 8555</p>
+                    </div>
+                    <div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product card 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="../Product Details/product.html?id=18">
+                        <div class="img-container">
+                            <img class="main-img" src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/main/Assests/Products/Women/Ladies Premium Leather Jacket with Leather Scrunch Sides/Ladies Premium Leather Jacket with Leather Scrunch Sides1.jpg"
+                                alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">Scrunch-Side Jacket</h3>
+                        <p class="product-price">Rs. 7555</p>
+                    </div>
+                    <div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product card 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <a href="../Product Details/product.html?id=19">
+                        <div class="img-container">
+                            <img class="main-img" src="https://raw.githubusercontent.com/Muhammad-Farasat/samz-tech-final-project/main/Assests/Products/Women/Ladies Premium Lightweight Goatskin Classic Motorcycle Leather Jacket MCJ/Ladies Premium Lightweight Goatskin Classic Motorcycle Leather Jacket MCJ1.jpg"
+                                alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">Classic Goatskin Biker</h3>
+                        <p class="product-price">Rs. 2555</p>
+                    </div>
+                    <div>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footerContainer">
+
+            <div id="community">
+
+                <div>
+                    <h1>JOIN OUR COMMUNITY</h1>
+                    <p>Get the latest news & offers</p>
+                </div>
+
+                <div>
+                    <div id="inputEmail">
+                        <input type="text" placeholder="Email Address">
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="divider"></div>
+
+            <div id="lists">
+
+                <div id="subLists">
+
+                    <div id="support">
+                        <p>SUPPORT</p>
+                        <ul>
+                            <li>FAQs</li>
+                            <li>Contact Us</li>
+                            <li>Return & Refund Policy</li>
+                            <li>Shipping & Delivery</li>
+                            <li>Order Tracking</li>
+                        </ul>
+                    </div>
+
+                    <div id="dividerList"></div>
+
+                    <div id="services">
+                        <p>SERVICES</p>
+                        <ul>
+                            <li>Custom Orders</li>
+                            <li>Gift Cards</li>
+                            <li>Size Guide</li>
+                            <li>Personal Styling</li>
+                            <li>Affiliate Program</li>
+                        </ul>
+                    </div>
+
+                    <div id="dividerList"></div>
+
+                    <div id="about">
+                        <p>ABOUT</p>
+                        <ul>
+                            <li>Our Story</li>
+                            <li>Sustainablitiy & Ethics</li>
+                            <li>Careers</li>
+                            <li>Blog</li>
+                            <li>Customer Reviews</li>
+                        </ul>
+                    </div>
+
+                    <div id="dividerList"></div>
+
+                    <div id="parthner">
+                        <p>PARTHNER</p>
+                        <ul>
+                            <li>Brand Collabrations</li>
+                            <li>Influencer Program</li>
+                            <li>Whole Sale Inquiries</li>
+                            <li>Supplier Portal</li>
+                            <li>Franchise Opportunities</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div id="footerLogo">
+                    <h1>LOGO</h1>
+                </div>
+
+            </div>
+
+            <div id="divider"></div>
+
+            <div id="copyRight">
+
+                <div id="terms">
+                    <p>Privacy & Cookies</p>
+                    <a href="./Pages/Terms & Condition/termsCondition.html">Terms & Conditions</a>
+                </div>
+
+                <div>
+                    <p>&copy; Logo. All rights reserved</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    
+</body>
+<script src="arrivals.js"></script>
+<script src="../../script.js"></script>
+</html>
